@@ -1,4 +1,4 @@
-import StoreAccessor from './store-accessor';
+import StoreAccessor from './store-accessor.js';
 
 function plugin(Vue) {
 
@@ -18,7 +18,7 @@ function plugin(Vue) {
 
         /**
          * The 'beforeCreate' life-cycle hook for Vue 2.0
-         * 
+         *
          * @return {void}
          */
         beforeCreate() {
@@ -37,10 +37,10 @@ function plugin(Vue) {
 }
 
 function registerStore(vm) {
+
     // 1.) Check for a store "option" on the component.
     // 2.) Check for a store "object" on the root vue model.
     if (typeof vm.$options.store !== 'undefined' && typeof vm.$root.store !== 'undefined') {
-
         // Initialize the computed option if it hasn't already been initialized.
         if (typeof vm.$options.computed === 'undefined') {
             vm.$options.computed = {};
@@ -66,10 +66,6 @@ function registerStore(vm) {
             }
         }
     }
-}
-
-if (typeof window !== 'undefined' && window.Vue) {
-    window.Vue.use(plugin);
 }
 
 export default plugin;
