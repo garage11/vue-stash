@@ -2,6 +2,7 @@
   "name": "@garage11/vue-stash",
   "type": "module",
   "version": "0.0.0-development",
+  "publishConfig": {"access": "public"},
   "description": "A Vue.js plugin that makes it easy to share reactive data between components.",
   "main": "src/index.js",
   "scripts": {
