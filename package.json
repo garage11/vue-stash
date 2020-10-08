@@ -7,7 +7,8 @@
   "scripts": {
     "semantic-release": "semantic-release"
   },
-  "author": "Jeroen van Veen",
+  "author": "Cody Mercer",
+  "maintainers": ["Jeroen van Veen"],
   "license": "https://github.com/cklmercer/vue-stash/blob/master/LICENSE",
   "devDependencies": {
     "semantic-release": "^17.1.2"
